@@ -1,4 +1,7 @@
+const { nanoid } = require("nanoid");
+
 const products = require("../data/products.json");
+const { writeDataToFile } = require("../utils/index");
 
 function findAll() {
     return new Promise((resolve, reject) => {
@@ -14,7 +17,19 @@ function findById(id) {
     });
 }
 
+function create(product) {
+    return new Promise((resolve, reject) => {
+        const newProduct = { id: nanoid(), ...product };
+        products.push(newProduct);
+
+        writeDataToFile("./data/products.json", products);
+
+        resolve(newProduct);
+    });
+}
+
 module.exports = {
     findAll,
     findById,
+    create,
 };

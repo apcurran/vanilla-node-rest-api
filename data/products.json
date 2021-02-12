@@ -28,5 +28,23 @@
         "name": "Logitech G-Series Gaming Mouse",
         "description": "Sed posuere urna quis bibendum mattis. Nulla orci est, egestas in justo non, bibendum.",
         "price": 49.99
+    },
+    {
+        "id": "V7wYl6OjB-iUAISfWHKaP",
+        "title": "Test product",
+        "description": "This is my product",
+        "price": 100
+    },
+    {
+        "id": "mv4gSL3uGcj9k5FUxPnnl",
+        "title": "My cool product",
+        "description": "This is a cool product",
+        "price": 150
+    },
+    {
+        "id": "o9V9O5l13TSRyu7UYuv18",
+        "title": "Another product",
+        "description": "Lorem ipsum",
+        "price": 15
     }
 ]
