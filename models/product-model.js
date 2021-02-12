@@ -1,3 +1,5 @@
+"use strict";
+
 const { nanoid } = require("nanoid");
 
 let products = require("../data/products.json");

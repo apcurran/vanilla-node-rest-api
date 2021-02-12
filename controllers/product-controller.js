@@ -1,3 +1,5 @@
+"use strict";
+
 const Product = require("../models/product-model");
 const { getPostData } = require("../utils/index");
 
