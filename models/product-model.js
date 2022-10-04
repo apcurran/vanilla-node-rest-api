@@ -1,9 +1,9 @@
 "use strict";
 
-const { nanoid } = require("nanoid");
+const crypto = require("crypto");
 
-let products = require("../data/products.json");
 const { writeDataToFile } = require("../utils/index");
+let products = require("../data/products.json");
 
 function findAll() {
     return new Promise((resolve, reject) => {
@@ -21,7 +21,7 @@ function findById(id) {
 
 function create(product) {
     return new Promise((resolve, reject) => {
-        const newProduct = { id: nanoid(), ...product };
+        const newProduct = { id: crypto.randomUUID(), ...product };
         products.push(newProduct);
 
         writeDataToFile("./data/products.json", products);

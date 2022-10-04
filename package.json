@@ -9,8 +9,5 @@
     "dev": "nodemon server.js"
   },
   "author": "Alex Curran",
-  "license": "ISC",
-  "dependencies": {
-    "nanoid": "^3.1.20"
-  }
+  "license": "ISC"
 }
